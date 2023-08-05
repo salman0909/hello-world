@@ -8,4 +8,4 @@ RUN git clone https://github.com/salman0909/hello-world /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 EXPOSE 8000
-CMD ["python", "manage.py", "runserver", "192.168.100.15:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
