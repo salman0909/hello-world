@@ -1,1 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app01-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app01
+  template:
+    metadata:
+      labels:
+        app: app01
+    spec:
+      containers:
+        - name: app01
+          image: salman1091/hello-world-image:v1
+          ports:
+            - containerPort: 80
 
