@@ -16,5 +16,5 @@ spec:
         - name: app01
           image: salman1091/hello-world-image:v1
           ports:
-            - containerPort: 80
+            - containerPort: 8000
 
