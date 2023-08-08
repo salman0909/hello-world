@@ -10,4 +10,5 @@ spec:
       port: 8000
       targetPort: 8000
   type: LoadBalancer
-
+  externalIPs: # Add this section to specify your host's IP address
+    - 192.168.100.11 
