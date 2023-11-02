@@ -3,6 +3,9 @@ kind: Config
 build:
   artifacts:
   - image: hello-world-image
+    context: .
+    docker:
+      dockerfile: Dockerfile
 deploy:
   kubectl:
     manifests:
