@@ -2,7 +2,7 @@ apiVersion: skaffold/v2beta18
 kind: Config
 build:
   artifacts:
-  - image: hello-world-app
+  - image: hello-world-image
 deploy:
   kubectl:
     manifests:
