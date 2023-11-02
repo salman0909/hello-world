@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2beta18
+kind: Config
+build:
+  artifacts:
+  - image: hello-world-app
+deploy:
+  kubectl:
+    manifests:
+      - Kuberenetes/*.yaml
